@@ -1,0 +1,103 @@
+.home-page {
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f4f7ff 0%, #eef6ff 100%);
+  color: #14213d;
+  font-family: Arial, sans-serif;
+}
+
+.hero-section {
+  display: grid;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-copy h1 {
+  font-size: 2.2rem;
+  margin: 0.3rem 0 0.8rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  color: #4f6df5;
+  margin: 0;
+}
+
+.quote-banner {
+  overflow: hidden;
+  background: #14213d;
+  color: #fff;
+  border-radius: 999px;
+  padding: 0.9rem 1rem;
+}
+
+.quote-track {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: scrollQuotes 16s linear infinite;
+}
+
+.quote-pill {
+  white-space: nowrap;
+  background: rgba(255, 255, 255, 0.12);
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+}
+
+.info-grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.info-card,
+.highlight-strip {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 12px 30px rgba(20, 33, 61, 0.08);
+}
+
+.project-card ul {
+  padding-left: 1.2rem;
+}
+
+.team-list {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.team-member {
+  border-top: 1px solid #e7ebf5;
+  padding-top: 0.8rem;
+}
+
+.team-member h3 {
+  margin: 0 0 0.2rem;
+}
+
+.member-role {
+  font-weight: 700;
+  color: #4f6df5;
+  margin: 0 0 0.3rem;
+}
+
+.highlight-strip {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  margin-top: 1.25rem;
+}
+
+@keyframes scrollQuotes {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
